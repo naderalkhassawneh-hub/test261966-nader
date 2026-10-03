@@ -1,6 +1,5 @@
 
-![Banner](https://raw.githubusercontent.com/naderalkhassawneh-hub/test261966-nader/main/banner.png)
-
+![Banner](nader-github.jpeg)
 # test261966-nader 🇯🇴
 
 ### بواسطة نادر الخصاونة | Nader Al-Khassawneh
