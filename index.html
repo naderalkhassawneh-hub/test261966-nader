@@ -4,46 +4,68 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>نادر الخصاونة - رحلة تعلمي</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 <style>
-body{margin:0;background:#0f172a;color:#e2e8f0;font-family:system-ui,Tahoma;line-height:1.7}
-.container{max-width:800px;margin:auto;padding:20px}
-.card{background:#1e293b;border-radius:16px;padding:20px;margin:15px 0;border:1px solid #334155}
-.badge{background:#14b8a6;color:#fff;padding:4px 12px;border-radius:20px;font-size:12px}
-h1{color:#2dd4bf;font-size:28px}
-h2{color:#5eead4;border-right:4px solid #14b8a6;padding-right:10px}
-.day{background:#0f172a;border-right:4px solid #14b8a6;padding:15px;margin:12px 0;border-radius:8px}
-.day.done{border-color:#22c55e;background:#052e16}
-.day.new{border-color:#f59e0b;background:#2a1f0a;animation:glow 2s infinite}
-.day.next{border-style:dashed;border-color:#64748b;opacity:.7}
-@keyframes glow{0%,100%{box-shadow:0 0 5px #f59e0b}50%{box-shadow:0 0 20px #f59e0b}}
-.btn{display:inline-block;padding:10px 18px;border-radius:8px;text-decoration:none;color:#fff;margin:5px;font-weight:bold}
-.wa{background:#25D366}.fb{background:#1877f2}.mail{background:#334155}
-a{color:#2dd4bf}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:#fff;font-family:'Cairo',system-ui,Tahoma;line-height:1.8;min-height:100vh}
+.container{max-width:850px;margin:auto;padding:20px}
+.card{background:rgba(255,255,255,0.95);color:#1e293b;border-radius:20px;padding:25px;margin:20px 0;box-shadow:0 10px 30px rgba(0,0,0,0.2);backdrop-filter:blur(10px)}
+.badge{background:linear-gradient(90deg,#667eea,#764ba2);color:#fff;padding:6px 16px;border-radius:25px;font-size:13px;font-weight:bold}
+h1{color:#5a3d8a;font-size:32px;margin:10px 0}
+h2{color:#667eea;border-right:5px solid #764ba2;padding-right:12px;font-size:22px}
+.day{background:#f8fafc;border-right:5px solid #667eea;padding:16px;margin:14px 0;border-radius:12px;transition:0.3s;color:#334155}
+.day:hover{transform:translateX(-5px);box-shadow:0 5px 15px rgba(102,126,234,0.2)}
+.day.done{border-color:#22c55e;background:#f0fdf4}
+.day.new{border-color:#f59e0b;background:linear-gradient(90deg,#fffbeb,#fef3c7);animation:glow 2s infinite;box-shadow:0 0 15px rgba(245,158,11,0.4)}
+.day.next{border-style:dashed;border-color:#94a3b8;opacity:.7;background:#f1f5f9}
+@keyframes glow{0%,100%{box-shadow:0 0 10px #f59e0b}50%{box-shadow:0 0 25px #f59e0b}}
+.btn{display:inline-block;padding:12px 22px;border-radius:30px;text-decoration:none;color:#fff;margin:6px;font-weight:bold;transition:0.3s;box-shadow:0 4px 10px rgba(0,0,0,0.2)}
+.btn:hover{transform:translateY(-3px);box-shadow:0 6px 15px rgba(0,0,0,0.3)}
+.wa{background:linear-gradient(90deg,#25D366,#128C7E)}.fb{background:linear-gradient(90deg,#1877f2,#0d5bbf)}.mail{background:linear-gradient(90deg,#667eea,#764ba2)}
+a{color:#667eea;text-decoration:none;font-weight:bold}
+.top-header{text-align:center;background:rgba(255,255,255,0.15);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.2)}
+.skills-grid{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.skill{background:linear-gradient(90deg,#667eea22,#764ba222);border:1px solid #667eea44;padding:6px 12px;border-radius:20px;font-size:13px;color:#5a3d8a;font-weight:bold}
 </style>
 </head>
 <body>
 <div class="container">
-<div class="card" style="text-align:center">
-<span class="badge">TEST 261966 JO</span>
+<div class="card top-header" style="background:rgba(255,255,255,0.95)">
+<span class="badge">✨ تصميم جديد - TEST 261966 JO ✨</span>
 <h1>نادر علي إسعيد الخصاونة</h1>
-<p>✅ تم التحقق - مبرمج ومصمم مواقع من الأردن</p>
-<p>أتعلم البرمجة يوم بيوم وأوثق رحلتي هنا</p>
-<a class="btn wa" href="https://wa.me/962786102948">واتساب 0786102948</a>
-<a class="btn fb" href="https://www.facebook.com/share/1BkX2RDVJJ/">فيسبوك</a>
-<a class="btn mail" href="mailto:Naderalkhassawneh@gmail.com">ايميل</a>
+<p style="font-size:18px;color:#5a3d8a">✅ مبرمج ومصمم مواقع من الأردن - تصميم جديد 2026</p>
+<p>أتعلم البرمجة يوم بيوم وأوثق رحلتي هنا - تصميم عصري جديد!</p>
+<a class="btn wa" href="https://wa.me/962786102948">💬 واتساب</a>
+<a class="btn fb" href="https://www.facebook.com/share/1BkX2RDVJJ/">👍 فيسبوك</a>
+<a class="btn mail" href="mailto:Naderalkhassawneh@gmail.com">📧 ايميل</a>
 </div>
-<div class="card"><h2>🛠️ مهاراتي</h2><p>✅ GitHub - ✅ HTML - ✅ Live - ✅ README - ✅ تحديث وتعديل - ✅ تطبيق GitHub موبايل</p></div>
+
+<div class="card"><h2>🛠️ مهاراتي - محدثة</h2>
+<div class="skills-grid">
+<span class="skill">✅ GitHub</span>
+<span class="skill">✅ HTML</span>
+<span class="skill">✅ تصميم عصري</span>
+<span class="skill">✅ ألوان متدرجة</span>
+<span class="skill">✅ Live موقع</span>
+<span class="skill">✅ تطبيق موبايل</span>
+<span class="skill">✅ تحديث وتعديل</span>
+</div>
+</div>
+
 <div class="card"><h2>📖 رحلة تعلمي - يوميات مبرمج</h2>
-<div class="day done"><strong>اليوم 1 - فتحت حساب GitHub لأول مرة</strong><br>تعلمت كيف أعمل مستودع جديد وأفهم شو يعني Repository.</div>
-<div class="day done"><strong>اليوم 2 - رفعت أول ملفاتي</strong><br>تعلمت أرفع صور وملفات وأشوفها على الموقع.</div>
-<div class="day done"><strong>اليوم 3 - أضفت التواصل</strong><br>ضفت أزرار واتساب وفيسبوك وايميل لموقعي.</div>
-<div class="day done"><strong>اليوم 4 - موقعي صار Live على الإنترنت 🎉</strong><br>موقعي اشتغل وصار أي حدا بالعالم يقدر يشوفه!</div>
-<div class="day done"><strong>اليوم 5 - تعلمت التحديث والتعديل والشطب 🔥</strong><br>تعلمت كيف أحدث موقعي بنفسي، وأضيف أزرار واتساب شغالة برقمي الحقيقي 0786102948، وتعلمت كيف أعدل وأشطب الملفات.</div>
-<div class="day new"><strong>اليوم 6 - تعلمت العمل على تطبيق GitHub 📱 NEW</strong><br>اليوم تعلمت كيف أشتغل على تطبيق github.com من الموبايل! صرت أقدر أعدل موقعي وأحدثه وأنا برا البيت، من تلفوني مباشرة بدون ما أحتاج كمبيوتر. حرية كاملة!</div>
-<div class="day next"><strong>اليوم 7 - قادم قريباً...</strong><br>اكتب هنا شو رح تتعلم بكرا!</div>
+<div class="day done"><strong>اليوم 1 - فتحت حساب GitHub</strong><br>تعلمت كيف أعمل مستودع جديد.</div>
+<div class="day done"><strong>اليوم 2 - رفعت أول ملفاتي</strong><br>تعلمت أرفع صور وملفات.</div>
+<div class="day done"><strong>اليوم 3 - أضفت التواصل</strong><br>ضفت أزرار واتساب وفيسبوك.</div>
+<div class="day done"><strong>اليوم 4 - موقعي صار Live 🎉</strong><br>موقعي اشتغل على الإنترنت!</div>
+<div class="day done"><strong>اليوم 5 - التحديث والتعديل 🔥</strong><br>تعلمت كيف أحدث موقعي بنفسي برقمي 0786102948.</div>
+<div class="day done"><strong>اليوم 6 - تطبيق GitHub موبايل 📱</strong><br>صرت أقدر أعدل موقعي من تلفوني مباشرة!</div>
+<div class="day new"><strong>اليوم 7 - التصميم الجديد العصري 🎨 NEW</strong><br>اليوم غيرت تصميم موقعي بالكامل! أضفت ألوان متدرجة بنفسجية جميلة، وخطوط عصرية، وتأثيرات حركية. موقعي صار شكله احترافي مثل مواقع الشركات الكبيرة!</div>
+<div class="day next"><strong>اليوم 8 - قادم قريباً...</strong><br>شو رح نتعلم بكرا؟</div>
 </div>
-<div class="card" style="background:#1a2e2a"><h2>💡 إنجازي</h2><p>6 أيام من التعلم المستمر! من الصفر للاحتراف.</p></div>
-<div class="card" style="text-align:center;opacity:.6"><p>بواسطة نادر الخصاونة - 0786102948 - الأردن 🇯🇴</p><p>TEST 261966 JO - اليوم 6 مكتمل</p></div>
+
+<div class="card" style="background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;text-align:center"><h2 style="color:#fff;border:none">💡 إنجازي</h2><p style="font-size:18px">7 أيام من التعلم + تصميم جديد احترافي!</p><p>من موقع بسيط لموقع عصري يجنن!</p></div>
+
+<div class="card" style="text-align:center;opacity:.8"><p>بواسطة نادر الخصاونة - 0786102948 - الأردن 🇯🇴</p><p>TEST 261966 JO - تصميم جديد - اليوم 7</p></div>
 </div>
 </body>
 </html>
