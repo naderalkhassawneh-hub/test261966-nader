@@ -3,99 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>نادر الخصاونة - مرحلة الاحتراف</title>
+<title>نادر الخصاونة - اليوم 12</title>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f8fafc;--card:#ffffff;--text:#1e293b;--accent:#667eea}
-.dark{--bg:#0f172a;--card:#1e293b;--text:#f1f5f9;--accent:#22c55e}
-*{box-sizing:border-box;transition:background 0.3s,color 0.3s}
-body{margin:0;background:var(--bg);font-family:'Cairo',system-ui;color:var(--text);min-height:100vh}
+:root{--bg:#f1f5f9;--card:#fff;--text:#1e293b;--accent:#667eea}
+.dark{--bg:#0f172a;--card:#1e293b;--text:#f1f5f9}
+*{box-sizing:border-box;transition:0.3s}
+body{margin:0;background:var(--bg);font-family:'Cairo';color:var(--text);min-height:100vh}
 .container{max-width:960px;margin:auto;padding:18px}
-.card{background:var(--card);border-radius:22px;padding:24px;margin:18px 0;box-shadow:0 12px 30px rgba(0,0,0,0.12);color:var(--text)}
-.badge{background:linear-gradient(90deg,#f59e0b,#ec4899,#8b5cf6);color:#fff;padding:8px 20px;border-radius:25px;font-weight:900}
-h1{color:#5a3d8a;font-size:34px;text-align:center;margin:10px 0}
+.card{background:var(--card);border-radius:22px;padding:22px;margin:16px 0;box-shadow:0 10px 28px rgba(0,0,0,0.1);color:var(--text)}
+.badge{background:linear-gradient(90deg,#f59e0b,#ef4444,#8b5cf6);color:#fff;padding:7px 18px;border-radius:25px;font-weight:900}
+h1{color:#5a3d8a;text-align:center;margin:8px 0}
 .dark h1{color:#a78bfa}
-h2{color:var(--accent);border-right:6px solid #f59e0b;padding-right:12px}
-.btn{display:inline-block;padding:12px 22px;border-radius:30px;text-decoration:none;color:#fff;margin:6px;font-weight:bold}
+h2{color:var(--accent);border-right:5px solid #f59e0b;padding-right:10px;font-size:18px}
+.btn{display:inline-block;padding:11px 20px;border-radius:28px;text-decoration:none;color:#fff;margin:5px;font-weight:bold}
 .wa{background:linear-gradient(90deg,#25D366,#128C7E)}.fb{background:linear-gradient(90deg,#1877f2,#0d5bbf)}.mail{background:linear-gradient(90deg,#667eea,#764ba2)}
-.toggle{position:fixed;top:12px;left:12px;z-index:99;background:linear-gradient(90deg,#0f172a,#667eea);color:#fff;border:none;padding:10px 16px;border-radius:25px;font-weight:bold;cursor:pointer;box-shadow:0 5px 15px rgba(0,0,0,0.3)}
-.type-box{background:#0f172a;color:#22c55e;border-radius:18px;padding:18px;font-family:monospace;font-size:17px;min-height:80px;border:2px solid #22c55e}
-.counter{background:linear-gradient(135deg,#0f172a,#1e293b);color:#fff;border-radius:18px;padding:18px;text-align:center}
-.num{font-size:48px;font-weight:900;color:#22c55e}
-.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
-.proj{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:18px;border-radius:16px;position:relative;overflow:hidden}
-.proj::after{content:'قريبا';position:absolute;top:10px;left:-25px;background:#f59e0b;color:#fff;padding:3px 30px;transform:rotate(-35deg);font-size:10px;font-weight:900}
-.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}
-.skill{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:14px;border-radius:14px;text-align:center;font-weight:bold}
-.bar{height:8px;background:#e0e7ff;border-radius:10px;overflow:hidden;margin-top:6px}
-.bar i{display:block;height:100%;background:#22c55e;border-radius:10px}
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
-.g-item{border-radius:12px;overflow:hidden;border:2px solid #e0e7ff}
-.g-item img{width:100%;height:140px;object-fit:cover;display:block}
-.g-item p{padding:6px;text-align:center;font-weight:bold;color:#5a3d8a;margin:0;font-size:11px;background:#f8fafc}
-.day{background:#f8fafc;border-right:5px solid #667eea;padding:12px;margin:10px 0;border-radius:10px;color:#334155;font-size:13px}
-.dark .day{background:#1e293b;color:#cbd5e1}
+.toggle{position:fixed;top:10px;left:10px;z-index:99;background:#0f172a;color:#fff;border:none;padding:9px 14px;border-radius:20px;cursor:pointer;font-weight:bold}
+.type-box{background:#0f172a;color:#22c55e;border-radius:16px;padding:16px;font-family:monospace;border:2px solid #22c55e}
+.counter{background:linear-gradient(135deg,#0f172a,#1e293b);color:#fff;border-radius:16px;padding:16px;text-align:center}
+.num{font-size:44px;font-weight:900;color:#22c55e}
+.map{width:100%;height:260px;border:0;border-radius:16px}
+.form{display:grid;gap:10px}
+.form input,.form textarea{width:100%;padding:12px;border-radius:12px;border:2px solid #e0e7ff;font-family:'Cairo';font-size:14px}
+.form input:focus,.form textarea:focus{border-color:#667eea;outline:none;box-shadow:0 0 0 3px rgba(102,126,234,0.2)}
+.submit{background:linear-gradient(90deg,#667eea,#764ba2);color:#fff;border:none;padding:13px;border-radius:12px;font-weight:900;cursor:pointer;font-size:16px}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.proj{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:16px;border-radius:14px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:9px}
+.g-item{border-radius:10px;overflow:hidden;border:2px solid #e0e7ff}
+.g-item img{width:100%;height:130px;object-fit:cover;display:block}
+.g-item p{margin:0;padding:5px;text-align:center;font-size:11px;font-weight:bold;background:#f8fafc;color:#5a3d8a}
+.day{background:#f8fafc;border-right:5px solid #667eea;padding:10px;margin:8px 0;border-radius:10px;color:#334155;font-size:12px}
+.dark .day{background:#0f172a;color:#cbd5e1}
 .day.new{border-color:#f59e0b;background:linear-gradient(90deg,#fffbeb,#fef3c7)}
 </style>
 </head>
 <body>
-<button class="toggle" onclick="document.body.classList.toggle('dark');this.textContent=document.body.classList.contains('dark')?'☀️ نهاري':'🌙 ليلي'">🌙 ليلي</button>
+<button class="toggle" onclick="document.body.classList.toggle('dark');this.textContent=document.body.classList.contains('dark')?'☀️':'🌙'">🌙</button>
 <div class="container">
 <div class="card" style="text-align:center">
-<span class="badge">🚀 المرحلة 2 - اليوم 11 - وضع ليلي ومشاريع</span>
+<span class="badge">🔥 اليوم 12 - خريطة ونموذج تواصل 🔥</span>
 <h1>نادر علي إسعيد الخصاونة</h1>
-<p>من 10 أيام إلى الاحتراف الحقيقي 🇯🇴</p>
+<p>موقع يتواصل مع العالم 🇯🇴</p>
 <a class="btn wa" href="https://wa.me/962786102948">واتساب</a>
 <a class="btn fb" href="https://www.facebook.com/share/1BkX2RDVJJ/">فيسبوك</a>
 <a class="btn mail" href="mailto:Naderalkhassawneh@gmail.com">ايميل</a>
 </div>
 
-<div class="card"><h2>⌨️ يكتب حيًا</h2>
-<div class="type-box" id="typeBox"><span id="typeText"></span></div>
+<div class="card"><h2>⌨️ يكتب حيًا</h2><div class="type-box"><span id="typeText"></span></div></div>
+<div class="card counter"><h3 style="color:#f59e0b;margin:0">👁️ زوار أحياء</h3><div class="num" id="vis">1,320</div></div>
+
+<div class="card"><h2>🗺️ موقعي في الأردن - NEW</h2>
+<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384.5!2d35.9!3d31.95!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151b5f!2sAmman%2C%20Jordan!5e0!3m2!1sar!2sjo!4v1"></iframe>
+<p style="text-align:center;font-size:12px;color:#64748b">📍 عمان - الأردن - أخدم جميع مناطق المملكة</p>
 </div>
 
-<div class="card counter"><h3 style="color:#f59e0b;margin:0">👁️ زوار أحياء</h3><div class="num" id="vis">1,280</div></div>
-
-<div class="card"><h2>🚀 مشاريعي القادمة - NEW</h2>
-<div class="projects">
-<div class="proj"><h3 style="margin:0">🌐 موقع شركة</h3><p>تصميم موقع لشركة أردنية</p><small>HTML/CSS/JS</small></div>
-<div class="proj"><h3 style="margin:0">🛒 متجر إلكتروني</h3><p>متجر يبيع منتجات أردنية</p><small>قيد التخطيط</small></div>
-<div class="proj"><h3 style="margin:0">📱 تطبيق موبايل</h3><p>تطبيق خدمات في الأردن</p><small>فكرة مستقبلية</small></div>
-<div class="proj"><h3 style="margin:0">🎓 منصة تعليم</h3><p>تعليم البرمجة للمبتدئين</p><small>حلم كبير</small></div>
+<div class="card"><h2>✉️ تواصل معي مباشرة - NEW</h2>
+<div class="form">
+<input id="name" placeholder="اسمك الكريم">
+<input id="phone" placeholder="رقم هاتفك">
+<textarea id="msg" rows="3" placeholder="كيف أقدر أساعدك؟"></textarea>
+<button class="submit" onclick="sendWA()">🚀 أرسل عبر واتساب مباشرة</button>
 </div>
-<p style="text-align:center;color:#64748b;font-size:12px">اضغط زر 🌙 فوق لتحويل الموقع ليل نهار!</p>
+<p id="status" style="text-align:center;color:#22c55e;font-weight:bold;display:none">✅ تم! سيفتح واتساب الآن</p>
 </div>
 
-<div class="card"><h2>💪 مهاراتي</h2>
-<div class="skills">
-<div class="skill">HTML 90%<div class="bar"><i style="width:90%"></i></div></div>
-<div class="skill">CSS 85%<div class="bar"><i style="width:85%"></i></div></div>
-<div class="skill">GitHub 95%<div class="bar"><i style="width:95%"></i></div></div>
-<div class="skill">JS 40%<div class="bar"><i style="width:40%"></i></div></div>
-</div>
-</div>
+<div class="card"><h2>🚀 مشاريعي</h2><div class="projects">
+<div class="proj"><b>🌐 موقع شركة</b><br><small>تصميم احترافي</small></div>
+<div class="proj"><b>🛒 متجر</b><br><small>بيع منتجات</small></div>
+<div class="proj"><b>📱 تطبيق</b><br><small>خدمات الأردن</small></div>
+</div></div>
 
-<div class="card"><h2>🖼️ معرضي</h2>
-<div class="gallery">
+<div class="card"><h2>🖼️ معرضي</h2><div class="gallery">
 <div class="g-item"><img src="nader.jpeg"><p>المبرمج</p></div>
 <div class="g-item"><img src="nader-github.jpeg"><p>GitHub</p></div>
 <div class="g-item"><img src="nader.jpeg"><p>الأردن</p></div>
 <div class="g-item"><img src="nader-github.jpeg"><p>محترف</p></div>
-</div>
-</div>
+</div></div>
 
 <div class="card"><h2>📖 رحلتي</h2>
-<div class="day"><strong>اليوم 10</strong> - كتابة حية وسيرة ذاتية</div>
-<div class="day new"><strong>اليوم 11 - مشاريع ووضع ليلي 🌙 NEW</strong><br>اليوم دخلت المرحلة الثانية! أضفت قسم مشاريع مستقبلية وزر سحري يحول الموقع من نهاري لليلي! موقعي صار مثل فيسبوك وتويتر!</div>
+<div class="day"><strong>اليوم 11</strong> - وضع ليلي ومشاريع</div>
+<div class="day new"><strong>اليوم 12 - خريطة ونموذج تواصل 🔥 NEW</strong><br>اليوم أضفت خريطة جوجل حقيقية لموقعي في عمان، ونموذج ذكي يرسل الرسائل مباشرة على واتسابي! صار موقعي يستقبل زبائن حقيقيين!</div>
 </div>
 
-<div class="card" style="text-align:center;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff"><p>🇯🇴 نادر - 11 يوم إبداع - 0786102948</p></div>
+<div class="card" style="text-align:center;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff"><p>🇯🇴 نادر - 12 يوم إبداع - 0786102948</p></div>
 </div>
 <script>
-let c=1280; setInterval(()=>{c+=Math.floor(Math.random()*3);document.getElementById('vis').textContent=c.toLocaleString()},1200);
-const texts=["مرحبا... أنا نادر... اليوم 11 من رحلتي 🇯🇴","دخلت المرحلة الثانية... الاحتراف الحقيقي!","موقعي صار فيه وضع ليلي ونهاري 🌙☀️","أخطط لمشاريع كبيرة تخدم الأردن","شكراً لأنكم معي في كل خطوة ❤️"];
-let ti=0,ci=0,del=false;
-function type(){const cur=texts[ti];const el=document.getElementById('typeText');if(!del){el.textContent=cur.substring(0,ci+1);ci++;if(ci===cur.length)setTimeout(()=>del=true,1200)}else{el.textContent=cur.substring(0,ci-1);ci--;if(ci===0){del=false;ti=(ti+1)%texts.length}}setTimeout(type,del?35:85)}type();
+let c=1320; setInterval(()=>{c+=Math.floor(Math.random()*3);document.getElementById('vis').textContent=c.toLocaleString()},1200);
+const texts=["مرحبا... أنا نادر... موقعي صار فيه خريطة 🗺️","الآن أي زبون يقدر يتواصل معي مباشرة ✉️","12 يوم من الصفر... صرت محترف!","أخدم كل الأردن من عمان للعقبة 🇯🇴"];
+let ti=0,ci=0,del=false;function type(){const cur=texts[ti];const el=document.getElementById('typeText');if(!del){el.textContent=cur.substring(0,ci+1);ci++;if(ci===cur.length)setTimeout(()=>del=true,1200)}else{el.textContent=cur.substring(0,ci-1);ci--;if(ci===0){del=false;ti=(ti+1)%texts.length}}setTimeout(type,del?35:85)}type();
+function sendWA(){
+ const n=document.getElementById('name').value||'زائر';
+ const p=document.getElementById('phone').value||'';
+ const m=document.getElementById('msg').value||'مرحبا نادر';
+ const text=`مرحبا نادر 👋%0Aأنا ${n}%0Aرقمي ${p}%0Aرسالتي: ${m}%0Aمن موقعك الاحترافي`;
+ document.getElementById('status').style.display='block';
+ window.open(`https://wa.me/962786102948?text=${text}`,'_blank');
+}
 </script>
 </body>
 </html>
