@@ -53,9 +53,9 @@ h2{color:var(--accent);border-right:5px solid #f59e0b;padding-right:10px;font-si
 <div class="card"><h2>⌨️ يكتب حيًا</h2><div class="type-box"><span id="typeText"></span></div></div>
 <div class="card counter"><h3 style="color:#f59e0b;margin:0">👁️ زوار أحياء</h3><div class="num" id="vis">1,320</div></div>
 
-<div class="card"><h2>🗺️ موقعي في الأردن - NEW</h2>
-<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384.5!2d35.9!3d31.95!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151b5f!2sAmman%2C%20Jordan!5e0!3m2!1sar!2sjo!4v1"></iframe>
-<p style="text-align:center;font-size:12px;color:#64748b">📍 عمان - الأردن - أخدم جميع مناطق المملكة</p>
+<div class="card"><h2>🗺️ موقعي في العقبة - البحر الأحمر - NEW</h2>
+<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3386.3!2d35.0!3d29.52!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1500701e9d0d6f6b%3A0x2e2f5a!2sAqaba%2C%20Jordan!5e0!3m2!1sar!2sjo!4v1"></iframe>
+<p style="text-align:center;font-size:12px;color:#64748b">📍 العقبة - الأردن - 📍 العقبة - أخدم الأردن كامل من البحر الأحمر</p>
 </div>
 
 <div class="card"><h2>✉️ تواصل معي مباشرة - NEW</h2>
@@ -90,7 +90,7 @@ h2{color:var(--accent);border-right:5px solid #f59e0b;padding-right:10px;font-si
 </div>
 <script>
 let c=1320; setInterval(()=>{c+=Math.floor(Math.random()*3);document.getElementById('vis').textContent=c.toLocaleString()},1200);
-const texts=["مرحبا... أنا نادر... موقعي صار فيه خريطة 🗺️","الآن أي زبون يقدر يتواصل معي مباشرة ✉️","12 يوم من الصفر... صرت محترف!","أخدم كل الأردن من عمان للعقبة 🇯🇴"];
+const texts=["مرحبا... أنا نادر... موقعي صار فيه خريطة 🗺️","الآن أي زبون يقدر يتواصل معي مباشرة ✉️","12 يوم من الصفر... صرت محترف!","أخدم كل الأردن من العقبة لكل الأردن 🇯🇴"];
 let ti=0,ci=0,del=false;function type(){const cur=texts[ti];const el=document.getElementById('typeText');if(!del){el.textContent=cur.substring(0,ci+1);ci++;if(ci===cur.length)setTimeout(()=>del=true,1200)}else{el.textContent=cur.substring(0,ci-1);ci--;if(ci===0){del=false;ti=(ti+1)%texts.length}}setTimeout(type,del?35:85)}type();
 function sendWA(){
  const n=document.getElementById('name').value||'زائر';
