@@ -101,7 +101,7 @@ body{background:#070a10;color:#e6eef3;overflow-x:hidden}
 <div class="card" style="margin-top:24px;text-align:center;background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.04));border:1px solid rgba(45,212,191,.2)">
 <div class="en" style="font-size:11px;letter-spacing:.2em;color:rgba(255,255,255,.4);margin-bottom:8px">زوار أحياء • LIVE VISITOR COUNTER</div>
 <div style="font-size:14px;color:#facc15;margin-bottom:8px">عداد الزيارات • يعد لحظياً 🔴</div>
-<div id="liveCounter" style="font-size:48px;font-weight:800;color:#4ade80;letter-spacing:.05em;line-height:1;text-shadow:0 0 20px rgba(74,222,128,0.4)">1,333</div>
+<div id="liveCounter" style="font-size:48px;font-weight:800;color:#4ade80;letter-spacing:.05em;line-height:1;text-shadow:0 0 20px rgba(74,222,128,0.4)">1,417</div>
 <div style="margin-top:8px;display:flex;justify-content:center;gap:8px;align-items:center"><span style="width:8px;height:8px;background:#22c55e;border-radius:50%;display:inline-block;animation:blink 1.5s infinite"></span><span class="en" style="font-size:11px;color:#22c55e">LIVE • يعد الآن</span></div>
 <div style="margin:20px auto 0;background:#fff;padding:12px;border-radius:16px;display:inline-block"><img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://naderalkhassawneh-hub.github.io/test261966-nader/" alt="QR Code" style="width:160px;height:160px;display:block"/></div>
 <div style="margin-top:16px;background:rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:12px 16px;word-break:break-all"><div style="font-size:13px;color:#fde68a;margin-bottom:6px">امسح الرمز لزيارة موقعي مباشرة ✨</div><a href="https://naderalkhassawneh-hub.github.io/test261966-nader/" target="_blank" style="font-size:14px;color:#5eead4;text-decoration:none;font-weight:600;letter-spacing:.02em" class="en">https://naderalkhassawneh-hub.github.io/test261966-nader/</a><div style="font-size:11px;color:rgba(255,255,255,.4);margin-top:6px" class="en">اضغط على الرابط أو امسح الـ QR</div></div>
@@ -251,7 +251,7 @@ body{background:#070a10;color:#e6eef3;overflow-x:hidden}
 </div>
 </div>
 <script>
-let count = parseInt(localStorage.getItem('nader_counter') || '1333');
+let count = parseInt(localStorage.getItem('nader_counter') || '1417');
 const el = document.getElementById('liveCounter');
 function animateTo(target){
   let start = parseInt(el.innerText.replace(/,/g,'')) || 0;
@@ -273,7 +273,7 @@ setTimeout(()=>animateTo(count),400);
 count++; localStorage.setItem('nader_counter',count);
 setTimeout(()=>animateTo(count),2200);
 setInterval(()=>{ if(Math.random()>0.4){ count++; localStorage.setItem('nader_counter',count); animateTo(count); } }, 8000+Math.random()*12000);
-fetch('https://api.countapi.xyz/hit/naderalkhassawneh-hub/test261966-nader-live').then(r=>r.json()).then(d=>{ if(d&&d.value){ let real=1333+d.value; if(real>count){ count=real; localStorage.setItem('nader_counter',count); animateTo(count); } } }).catch(()=>{});
+fetch('https://api.countapi.xyz/hit/naderalkhassawneh-hub/test261966-nader-live').then(r=>r.json()).then(d=>{ if(d&&d.value){ let real=1417+d.value; if(real>count){ count=real; localStorage.setItem('nader_counter',count); animateTo(count); } } }).catch(()=>{});
 </script>
 </body>
 </html>
